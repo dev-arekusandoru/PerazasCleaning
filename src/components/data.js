@@ -1,60 +1,72 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-} from "@heroicons/react/24/solid";
+	DevicePhoneMobileIcon,
+	AdjustmentsHorizontalIcon,
+	SunIcon,
+	GlobeAmericasIcon,
+	UserGroupIcon,
+	TruckIcon
+} from '@heroicons/react/24/solid';
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
+import abtImg from '../../public/img/benefit-one.png';
 
-const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
-  bullets: [
-    {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
-    },
-    {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
-    },
-  ],
+const about = {
+	title: 'Our Commitment to Excellence',
+	desc: "We go beyond cleaning to ensure your business shines. Here's what sets us apart:",
+	image: abtImg,
+	bullets: [
+		{
+			title: 'Eco-Friendly Solutions',
+			desc: 'We prioritize the environment by using safe, sustainable cleaning products that are tough on dirt but gentle on the planet.',
+			icon: <GlobeAmericasIcon />
+		},
+		{
+			title: 'Customer-Centric Approach',
+			desc: 'Building trust and fostering long-term relationships with our clients is at the heart of our business. Your satisfaction drives everything we do.',
+			icon: <UserGroupIcon />
+		},
+		{
+			title: 'Wide Service Area',
+			desc: 'Serving the entire Washington, D.C. region, including Maryland, Virginia, and the District of Columbia, we are always nearby to assist you.',
+			icon: <TruckIcon />
+		}
+	]
 };
 
-const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
-  bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
-  ],
-};
+const services = [
+	{ title: 'Dusting', sub: 'Wiping counter tops and all surfaces' },
+	{ title: 'Polishing', sub: 'Glass, mirrors, and stainless steel' },
+	{ title: 'Vacuuming', sub: 'Carpets, rugs, and upholstery' },
+	{ title: 'Mopping', sub: 'Hardwood, tile, and linoleum floors' },
+	{
+		title: 'Cleaning & Sanitizing',
+		sub: 'Bathrooms, Kitchens, Dining Areas and more'
+	},
+	{ title: 'Trash Removal', sub: 'Emptying and replacing liners' },
+	{
+		title: 'Tidying Up',
+		sub: 'Offices, lobbies, and common areas'
+	},
+	{ title: 'Window Cleaning', sub: 'Interior and exterior windows' },
+	{ title: 'Carpet Cleaning', sub: 'Deep cleaning and stain removal' },
+	{ title: 'Before and After', sub: 'Events, Parties, and Meetings' },
+	{ title: 'Deep Cleaning', sub: 'Turn over services for rental properties' }
+];
 
+const businesses = [
+	'Offices',
+	'Schools',
+	'Medical Centers',
+	'Elderly Care Centers',
+	'Shopping Centers',
+	'Banks',
+	'Daycares',
+	'Fire Stations',
+	'Apartment Complexes',
+	'Real Estate Properties',
+	'Car Dealerships',
+	'Airbnb',
+	'Restaurants',
+	'Fitness Centers'
+];
 
-export {benefitOne, benefitTwo};
+export { about, services, businesses };
