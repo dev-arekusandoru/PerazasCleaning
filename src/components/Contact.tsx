@@ -24,7 +24,7 @@ export const Contact = () => {
 					<input
 						type='hidden'
 						name='access_key'
-						value='260f1943-с6а3-4a66-9830-e2c0cbbe033b'
+						value='260f1943-c6a3-4a66-9830-e2c0cbbe033b'
 					></input>
 					<div className='flex flex-col md:flex-row gap-y-2 md:gap-x-2'>
 						<div className='relative flex-1'>
