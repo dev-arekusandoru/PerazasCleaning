@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 interface ButtonProps {
 	children: string;
@@ -28,7 +27,7 @@ function Button(props: ButtonProps) {
 					props.onPress();
 				}
 			}}
-			className={`px-5 py-[6px] text-white bg-indigo-600 border-indigo-500 border-2 hover:bg-transparent hover:text-indigo-500 transition-colors rounded-md md:ml-5 hover:cursor-pointer ${props.className}`}
+			className={`text-white bg-indigo-600 border-indigo-500 border-2 hover:bg-transparent hover:text-indigo-500 transition-colors rounded-md hover:cursor-pointer ${props.className || 'px-5 py-[6px]'}`}
 		>
 			{props.children}
 		</button>
