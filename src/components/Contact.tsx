@@ -68,6 +68,11 @@ export const Contact = () => {
 						name='botcheck'
 						className='hidden'
 					></input>
+					<input
+						type='hidden'
+						name='redirect'
+						value='https://perazascleaningservices.com/'
+					></input>
 					<button
 						type='submit'
 						className='absolute bottom-1 right-1 flex items-center justify-center w-10 h-10 bg-indigo-700 text-white rounded-md'
