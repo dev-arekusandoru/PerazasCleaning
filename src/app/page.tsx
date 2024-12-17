@@ -10,7 +10,7 @@ import { Services } from '@/components/Services';
 import { about, services, businesses } from '@/components/data';
 export default function Home() {
 	return (
-		<Container>
+		<Container className='p-0'>
 			<Hero />
 			<SectionTitle
 				preTitle='About Us'
@@ -47,12 +47,17 @@ export default function Home() {
 
 			<Testimonials />
 
-			{/*<SectionTitle preTitle='FAQ' title='Frequently Asked Questions'>
-				Answer your customers possible questions here, it will increase
-				the conversion rate as well as support or chat requests.
+			<SectionTitle
+				preTitle='Contact'
+				title="Let's get in touch"
+				id='contact'
+			>
+				Let us know what kind of buildings and services you need
+				cleaned, and we will get back to you with a quote as soon as
+				possible.
 			</SectionTitle>
 
-			 <Faq /> */}
+			{/* <Faq /> */}
 			<Contact />
 		</Container>
 	);

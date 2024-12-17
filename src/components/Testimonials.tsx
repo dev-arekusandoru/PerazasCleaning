@@ -5,7 +5,7 @@ export const Testimonials = () => {
 	let set = Math.round(Math.random() * 2) + 1;
 	return (
 		<Container>
-			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10 overflow-scroll'>
+			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 overflow-scroll'>
 				{set === 1 && (
 					<>
 						<Testimonial name='Chris Sams'>
