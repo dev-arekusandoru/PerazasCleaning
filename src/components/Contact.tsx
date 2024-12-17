@@ -48,11 +48,11 @@ export const Contact = () => {
 								required
 								autoComplete='none'
 								placeholder=' '
-								className='w-full bg-white text-indigo-500 h-[40px] p-2 focus:outline-none rounded-md peer/email transition-all ease-in-out duration-300 focus:mt-5 [&:not(:placeholder-shown)]:mt-5'
+								className='w-full bg-white text-indigo-500 h-[40px] p-2 focus:outline-none rounded-md peer/email transition-all ease-in-out duration-300 focus:mt-5 [&:not(:placeholder-shown)]:mt-5 md:focus:mt-0 md:[&:not(:placeholder-shown)]:mt-0'
 							></input>
 							<label
 								htmlFor='form-name'
-								className='pointer-events-none absolute flex items-center left-2 top-0 text-md opacity-50 text-indigo-500 h-[40px] transition-all duration-300 ease-in-out peer-focus/email:top-[-12px] peer-focus/email:opacity-100 peer-focus/email:text-white peer-focus/email:left-0 peer-[:not(:placeholder-shown)]/email:top-[-12px] peer-[:not(:placeholder-shown)]/email:opacity-100 peer-[:not(:placeholder-shown)]/email:text-white peer-[:not(:placeholder-shown)]/email:left-0'
+								className='pointer-events-none absolute flex items-center left-2 top-0 text-md opacity-50 text-indigo-500 h-[40px] transition-all duration-300 ease-in-out peer-focus/email:top-[-12px] md:peer-focus/email:top-[-32px] peer-focus/email:opacity-100 peer-focus/email:text-white peer-focus/email:left-0 peer-[:not(:placeholder-shown)]/email:top-[-12px] md:peer-[:not(:placeholder-shown)]/email:top-[-32px] peer-[:not(:placeholder-shown)]/email:opacity-100 peer-[:not(:placeholder-shown)]/email:text-white peer-[:not(:placeholder-shown)]/email:left-0'
 							>
 								Email
 							</label>
