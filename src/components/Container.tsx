@@ -9,7 +9,7 @@ interface ContainerProps {
 export function Container(props: Readonly<ContainerProps>) {
 	return (
 		<div
-			className={`container p-8 mx-auto xl:px-2 ${
+			className={`container p-4 md:p-8 mx-auto xl:px-2 ${
 				props.className ? props.className : ''
 			}`}
 			id={props.id}
