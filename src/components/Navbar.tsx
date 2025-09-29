@@ -23,24 +23,12 @@ export const Navbar = () => {
 			<nav className='container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1'>
 				{/* Logo  */}
 				<Link href='/'>
-					<span className='flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100'>
+					<span className='flex items-center space-x-2 text-2xl font-medium text-ogblue dark:text-gray-100'>
 						<span>
-							<Image
-								src={lightIcon}
-								width='32'
-								alt='N'
-								height='32'
-								className='w-8 dark:hidden'
-							/>
-							<Image
-								src={darkIcon}
-								width='32'
-								alt='N'
-								height='32'
-								className='w-8 hidden dark:block'
-							/>
+							<Image src={lightIcon} width='32' alt='N' height='32' className='w-8 dark:hidden' />
+							<Image src={darkIcon} width='32' alt='N' height='32' className='w-8 hidden dark:block' />
 						</span>
-						<span>Peraza&apos;s Cleaning</span>
+						<span>Peraza&apos;s Cleaning Services</span>
 					</span>
 				</Link>
 
@@ -59,7 +47,7 @@ export const Navbar = () => {
 						<>
 							<Disclosure.Button
 								aria-label='Toggle Menu'
-								className='px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700'
+								className='px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-ogblue focus:text-ogblue focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700'
 							>
 								<svg
 									className='w-6 h-6 fill-current'
@@ -87,17 +75,15 @@ export const Navbar = () => {
 									{navigation.map((item, index) => (
 										<button
 											key={index}
-											onClick={() =>
-												scrollTo(item.toLowerCase())
-											}
-											className='w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none'
+											onClick={() => scrollTo(item.toLowerCase())}
+											className='w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-ogblue focus:text-ogblue focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none'
 										>
 											{item}
 										</button>
 									))}
 									<Button
 										href='#contact'
-										className='w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 hover:text-indigo-600 hover:bg-transparent rounded-md lg:ml-5'
+										className='w-full px-6 py-2 mt-3 text-center text-white bg-ogblue hover:text-ogblue hover:bg-transparent rounded-md lg:ml-5'
 									>
 										Contact Us
 									</Button>
@@ -114,7 +100,7 @@ export const Navbar = () => {
 							<li className='mr-3 nav__item' key={index}>
 								<button
 									onClick={() => scrollTo(menu.toLowerCase())}
-									className='inline-block px-4 py-2 text-lg font-normal text-gray-800 dark:text-gray-200 no-underline focus:outline-none rounded-md hover:text-indigo-500 hover:bg-indigo-100 dark:hover:bg-indigo-800 dark:hover:bg-opacity-40 transition-colors'
+									className='inline-block px-4 py-2 text-lg font-normal text-gray-800 dark:text-gray-200 no-underline focus:outline-none rounded-md hover:text-ogblue hover:bg-indigo-100 dark:hover:bg-indigo-800 dark:hover:bg-opacity-40 transition-colors'
 								>
 									{menu}
 								</button>

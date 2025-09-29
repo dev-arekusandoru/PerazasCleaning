@@ -27,7 +27,9 @@ function Button(props: ButtonProps) {
 					props.onPress();
 				}
 			}}
-			className={`text-white bg-indigo-600 border-indigo-500 border-2 hover:bg-transparent hover:text-indigo-500 transition-colors rounded-md hover:cursor-pointer ${props.className || 'px-5 py-[6px]'}`}
+			className={`text-white bg-ogblue border-ogblue border-2 hover:bg-transparent hover:text-ogblue transition-colors rounded-md hover:cursor-pointer ${
+				props.className || 'px-5 py-[6px]'
+			}`}
 		>
 			{props.children}
 		</button>
